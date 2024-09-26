@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Weather Prediction ( Classification )</h1>
+    <form action="/predict" method="POST">
+        <label for="Temperature">Temperature:</label>
+        <input type="number" step="any" id="Temperature" name="Temperature" required><br>
+        
+        <label for="Humidity">Humidity:</label>
+        <input type="number" id="Humidity" name="Humidity" required><br>
+        
+        <label for="Wind Speed">Wind Speed:</label>
+        <input type="number" step="any" id="Wind Speed" name="Wind Speed" required><br>
+        
+        <label for="Precipitation (%)">Precipitation (%):</label>
+        <input type="number" step="any" id="Precipitation (%)" name="Precipitation (%)" required><br>
+        
+        <label for="Cloud Cover">Cloud Cover:</label>
+        <input type="text" id="Cloud Cover" name="Cloud Cover" required><br>
+        
+        <label for="Atmospheric Pressure">Atmospheric Pressure:</label>
+        <input type="number" step="any" id="Atmospheric Pressure" name="Atmospheric Pressure" required><br>
+        
+        <label for="UV Index">UV Index:</label>
+        <input type="number" id="UV Index" name="UV Index" required><br>
+        
+        <label for="Season">Season:</label>
+        <input type="text" id="Season" name="Season" required><br>
+        
+        <label for="Visibility (km)">Visibility (km):</label>
+        <input type="number" step="any" id="Visibility (km)" name="Visibility (km)" required><br>
+        
+        <label for="Location">Location:</label>
+        <input type="text" id="Location" name="Location" required><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
